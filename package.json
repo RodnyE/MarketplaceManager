@@ -1,13 +1,14 @@
 {
-  "version": "1.0.0", 
-  
+  "version": "1.0.0",
   "scripts": {
     "start": "NODE_ENV=production node serv/server.js",
     "test": "NODE_ENV=development node serv/server.js",
     "build": "webpack --mode=production --node-env=production"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "lowdb": "^7.0.1",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
