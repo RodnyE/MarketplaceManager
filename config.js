@@ -5,7 +5,6 @@ module.exports = {
     
     DIR: __dirname, 
     SERV: __dirname + "/serv",
-    DIST: __dirname + "/dist",
-    PUBLIC: __dirname + "/public",
+    DIST: __dirname + "/dist", 
     SRC: __dirname + "/src",
 };

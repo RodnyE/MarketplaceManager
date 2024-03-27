@@ -17,16 +17,18 @@ module.exports = {
     },
     
     // if start a dev server
-    devServer: {
-        contentBase: cfg.DIST,
+    devServer: { 
         port: cfg.PORT,
-        host: 'localhost',
+        host: 'localhost', 
+        compress: true,
+        hot: true, 
+        liveReload: true,
     },
     
     // html export
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(cfg.PUBLIC, 'index.html'),
+            template: path.join(cfg.SRC, 'index.html'),
         }),
     ],
     

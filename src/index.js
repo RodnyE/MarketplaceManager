@@ -11,6 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // browser console in development mode
 eruda.init();
 
+// bootstrap dark mode
+document.querySelector("html")
+   .setAttribute("data-bs-theme", "dark");
+
 // render
 const root = createRoot(document.getElementById('root'));
 root.render(<App/>);

@@ -1,8 +1,14 @@
 
-export default function Button ({children}) {
+export default function Button ({onClick, children, disabled}) {
     return (
-        <button className="btn btn-primary"> 
-            {children} 
-        </button>
-    );
+      <div 
+        onClick={onClick} 
+        className={
+          "btn btn-primary fw-bold" 
+          + (disabled ? " disabled" : "")
+        }
+      > 
+        {children} 
+      </div>
+    )
 }
